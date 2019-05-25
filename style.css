@@ -1,0 +1,48 @@
+div#content {
+    display: flex;
+}
+aside,  #main-content, header, main {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+aside {
+    width: 20%;
+    height: 100vh;
+}
+#main-content {
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#main-content header {
+    width: 100%;
+    height: 10%;
+
+}
+#main-content main {
+    width: 100%;
+    height: 90%;
+}
+@media (max-width: 768px) {
+   aside.right {
+      right: 0;
+   }
+   aside {
+       height: 20%;
+       position: fixed;
+       width: 50%;
+       margin: 0;
+    
+   }
+   #main-content {
+       margin-top: 20%;
+       width: 100%;
+       
+   }
+}
+@media (max-width: 400px) {
+    #main-content {
+        margin-top: 36%;
+    }
+}
